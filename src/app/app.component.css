@@ -1,0 +1,59 @@
+/* app.component.css */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vmax 3vmax;
+}
+
+.navbar-title {
+    font-size: 1.7rem;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li {
+    display: inline;
+    margin-right: 2vmax;
+    font-size: 1.3rem;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-menu li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    min-height: 87vh;
+    margin-top: 0.4vmax;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+app-sidebar {
+    width: 20%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    font-size: 1.4rem;
+}

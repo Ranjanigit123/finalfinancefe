@@ -1,0 +1,42 @@
+/* myposts.component.css */
+
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    margin-top: 0.4vmax;
+}
+
+.no-posts-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.no-posts-container p {
+    text-align: center;
+    margin: 0;
+}

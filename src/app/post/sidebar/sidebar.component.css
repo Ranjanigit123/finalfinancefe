@@ -1,0 +1,28 @@
+/* sidebar.component.css */
+
+ul {
+    border: 1px solid lightgray;
+    margin-top: 0%;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+    margin: 3vmax;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+li:hover {
+    color: lightgray;
+}
+
+a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
