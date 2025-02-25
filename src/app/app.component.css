@@ -2,6 +2,7 @@
 
 .navbar {
     background-color: #461e36;
+    width: 91.5%;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -37,6 +38,7 @@
 
 .container {
     display: flex;
+     
     flex-direction: column;
     height: 100%;
     min-height: 87vh;
@@ -53,7 +55,7 @@ app-sidebar {
     padding: 20px;
     color: white;
     font-size: 1.4rem;
-    width: 93%;
+    width: 91.5%;
 }
 
 @media (min-width: 768px) {
