@@ -16,6 +16,10 @@ export class MypostComponent implements OnInit {
     myPosts: any[] = [];
     displayedPostList: any[] = [];
 noPosts: TemplateRef<NgIfContext<boolean>> | null | undefined;
+post: any;
+searchText: any;
+//applySearch: any;
+
     constructor(private postService: PostService) { }
     ngOnInit(): void {
         this.getMyPosts();

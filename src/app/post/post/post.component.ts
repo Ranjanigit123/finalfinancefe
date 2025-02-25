@@ -102,12 +102,12 @@ applySearch(): void {
             if (token) {
                 this.postService.getAllPosts()
                     .subscribe((postList: any) => {
-                        //this.postList = postList;
-                        //this.displayedPostList = [...this.postList];
-                        this.postList = postList.map((post: any) => {
-                            post.attachment = post.content - post.category; // Calculate attachment
-                            return post;
-                        });
+                        this.postList = postList;
+                        this.displayedPostList = [...this.postList];
+                        //this.postList = postList.map((post: any) => {
+                         //   post.attachment = post.content - post.category; // Calculate attachment
+                         //   return post;
+                        //});
                         this.displayedPostList = [...this.postList];
                     });
             }

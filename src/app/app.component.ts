@@ -17,7 +17,7 @@ import { SidebarComponent } from './post/sidebar/sidebar.component';
     styleUrl: './app.component.css'
 })
 export class AppComponent {
-    title = 'Personal Finance App';
+    title = 'PERSONAL FINANCE APP';
     isLoggedIn: boolean = false;
     constructor(private router: Router, private authService: AuthService,
         private sharedService: SharedService) { }

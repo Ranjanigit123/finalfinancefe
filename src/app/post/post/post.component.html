@@ -1,13 +1,13 @@
 <!-- post.component.html -->
  
-<div>
+<div class="search-container">
   <label for="search">Search Loans:</label>
   <input
     type="text"
     id="search"
     [(ngModel)]="searchText"
     (keyup)="applySearch()"
-    placeholder="Search by title, content, daily payable loan, or balance..."
+    placeholder="Search by name"
   />
 
 
@@ -21,8 +21,13 @@
     <div class="post-header">
       <div class="post-title">{{post.title}}</div>
     </div>
-    <div class="post-content"><strong><p>Total Loan Amount</p></strong>{{post.content}}</div>
-    <div class="post-category"><strong><p>Daily Payable Loan Amount</p></strong>{{post.category}}</div>
+    
+    <div class="post-borrowed-amount">
+      <strong><p>Total Loan Amount Borrowed</p></strong>
+      {{ post.borrowedAmount || 'N/A' }}
+    </div>
+    <div class="post-content"><strong><p>Total Amount to Pay with Interest</p></strong>{{post.content}}</div>
+    <div class="post-category"><strong><p>Loan Amount Paid Lastly</p></strong>{{post.category}}</div>
     <div class="post-attachment"><strong><p>Balance to Pay</p></strong>{{post.attachment}}</div>
     
     <div class="post-actions" *ngIf="getUserId() === post.author">
@@ -74,8 +79,9 @@
         required
       />
     </div>
+    
     <div>
-      <label for="updatePostContent">Total Loan Amount:</label>
+      <label for="updatePostContent">Total Amount to Pay with Interest:</label>
       <input
         type="text"
         id="updatePostContent"
@@ -85,7 +91,7 @@
       />
     </div>
     <div>
-      <label for="updatePostCategory">Daily Payable Loan Amount:</label>
+      <label for="updatePostCategory">Today Payable Loan Amount:</label>
       <input
         type="text"
         id="updatePostCategory"

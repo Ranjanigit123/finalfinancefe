@@ -5,12 +5,17 @@
         <div class="post-header">
             <div class="post-title">{{post.title}}</div>
         </div>
-        <div class="post-content">{{post.content}}</div>
+        <div class="post-borrowed-amount">
+            <strong><p>Total Loan Amount Borrowed</p></strong>
+            {{ post.borrowedAmount || 'N/A' }}
+          </div>
+        <div class="post-content"><strong><p>Total Amount to Pay with Interest</p></strong>{{post.content}}</div>
+        <div class="post-attachment"><strong><p>Balance to Pay</p></strong>{{post.attachment}}</div>
         
     </div>
 </div>
 <ng-template #noPosts>
     <div class="no-posts-container">
-        <p>No Posts available</p>
+        <p>No Loans available</p>
     </div>
 </ng-template>
